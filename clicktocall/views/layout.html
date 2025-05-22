@@ -1,0 +1,32 @@
+<div id="clicktocall-container" class="app-layout">
+    <div class="app-content-wrapper" style="display: block;">
+        <div id="callerid_manipulation_app_container">
+            <div class="">
+                <div class="monster-table-header">
+                    <button class="monster-button-primary new-rule" id="add-new">
+                        <i class="fa fa-plus"></i> {{i18n.clicktocall.create}}
+                    </button>
+                </div>
+                <table id="callerid-rules"
+                    class="monster-table footable footable-2 footable-filtering footable-filtering-right footable-paging footable-paging-center breakpoint-lg"
+                    data-filtering="true" style="display: table;">
+                    <thead>
+                        <tr class="footable-filtering">
+                            <th colspan="5">
+                            </th>
+                        </tr>
+                        <tr class="footable-header">
+                            <th class="header-rule-name" style="display: table-cell;">{{i18n.clicktocall.name}}</th>
+                            <th style="display: table-cell;">{{i18n.clicktocall.extension}}</th>
+                            <th class="header-action footable-last-visible" style="display: table-cell;">{{i18n.clicktocall.actions}}</th>
+                        </tr>
+                    </thead>
+                    <tbody id="c2c-list" class="table-container"></tbody>
+                </table>
+                <div id="c2c-form" class="form-container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
