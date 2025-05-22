@@ -1,0 +1,11 @@
+{
+	"clicktocall": {
+		"title": "Click to Call Manager",
+		"name": "Name",
+		"create": "Create Click to Call",
+		"extension": "Extension",
+		"actions": "Actions",
+		"no_c2c": "No Click to Calls have been created.",
+        "dial_first": "Dial First"
+	}
+}

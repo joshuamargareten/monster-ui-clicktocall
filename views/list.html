@@ -1,0 +1,26 @@
+{{#each items}}
+{{debug}}
+<tr class="c2c-row" data-id="{{id}}">
+    <td class="footable-first-visible" style="display: table-cell;">{{name}}</td>
+    <td style="display: table-cell;">{{extension}}</td>
+    <td class="footable-last-visible" style="display: table-cell;">
+        <button type="button" class="monster-button-ghost-icon copy-url" data-toggle="tooltip" data-title="Copy URL" data-id="{{id}}" data-extension="{{extension}}" data-auth="{{auth_required}}">
+            <svg class="svg-icon telicon2">
+                <i class="fa fa-clipboard"></i>
+            </svg>
+        </button>
+        <button data-id="{{id}}" type="button" class="monster-button-ghost-icon edit-button" data-toggle="tooltip" data-title="Edit">
+            <svg class="svg-icon telicon2">
+                <use xlink:href="#telicon2--edit" ⁄=""></use>
+            </svg>
+        </button>
+        <button data-id="{{id}}" type="button" class="monster-button-ghost-icon drop-rule" data-toggle="tooltip" data-title="Delete"><svg
+                class="svg-icon telicon2">
+                <use xlink:href="#telicon2--trash" ⁄=""></use>
+            </svg>
+        </button>
+    </td>
+</tr>
+{{else}}
+<tr class="footable-empty"><td colspan="5">{{i18n.clicktocall.no_c2c}}</td></tr>
+{{/each}}
